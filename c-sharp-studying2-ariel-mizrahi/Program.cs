@@ -1,4 +1,5 @@
 ﻿using System;
+using c_sharp_studying2_ariel_mizrahi.bacic_object;
 
 namespace c_sharp_studying2_ariel_mizrahi
 {
@@ -6,7 +7,7 @@ namespace c_sharp_studying2_ariel_mizrahi
     {
         static void Main(string[] args)
         {
-          
+            TestBasicObject.Demo();
         }
     }
 }

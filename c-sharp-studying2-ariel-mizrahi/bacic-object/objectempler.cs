@@ -6,39 +6,68 @@ using System.Threading.Tasks;
 
 namespace c_sharp_studying2_ariel_mizrahi.bacic_object
 {
-    class objectempler
+   public class Phone
     {
-        public int intProperty = 10;
+        public int price = 10;
 
-        public string stringProperty = "ariel mizrahi";
+        public string type = "";
 
-        public bool boolProperty = false;
-
+        public bool ison = false;
+        public Phone(int price,string type, bool ison)
+        {
+            this.price = price;
+            this.type = type;
+            this.ison = ison;
+        }
+        public Phone()
+        {
+            
+        }
         public void ToggleBoolProperty()
         {
-            boolProperty = !boolProperty;
+            ison = !ison;
+        }
+        public void DisplayPhone()
+        {
+
+            Console.WriteLine("Template  = price = {0} , type = {1}, is on ={2} "
+                ,price, type, ison);
         }
 
+    }
+    public class Store
+    {
+     public  Phone[] phon1 = new Phone[12];
+
+        public Store()
+        {
+            phon1[0] = new Phone(); 
+
+        }
     }
     public class TestBasicObject
     {
         public static void Demo()
         {
-            objectempler template1 = new objectempler();
+            Phone template1 = new Phone();
+            template1.DisplayPhone();
 
+            
+            template1.ison = true;
+            template1.type = "iphone 12 mini";
+            template1.price = 2000;
+            template1.DisplayPhone();
 
-            Console.WriteLine("Template 1 = intProperty = {0} , string property = {1}, boolProperty ={2} "
-                , template1.intProperty, template1.stringProperty, template1.boolProperty);
-            template1.boolProperty = true;
-            template1.stringProperty = "another string";
-            template1.intProperty = 20;
-            Console.WriteLine("Template 1 = intProperty = {0} , string property = {1}, boolProperty ={2} "
-                , template1.intProperty, template1.stringProperty, template1.boolProperty);
-            objectempler template2 = new objectempler();
+            Phone template2 = new Phone();
+            Console.WriteLine(template2.ison);
+            template2.ToggleBoolProperty();
+            template2.DisplayPhone();
 
-            Console.WriteLine("Template 2 = intProperty = {0} , string property = {1}, boolProperty ={2} "
-               , template2.intProperty, template2.stringProperty, template2.boolProperty);
-
+            Store st1 = new Store();
+            
+            st1.phon1[0] = template1;
+            st1.phon1[0].DisplayPhone();
+           
 
         }
     }
