@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c-sharp-studying2-ariel-mizrahi", "c-sharp-studying2-ariel-mizrahi\c-sharp-studying2-ariel-mizrahi.csproj", "{ECABD7FD-BE94-4733-B9BE-E50FE4BFAF11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECABD7FD-BE94-4733-B9BE-E50FE4BFAF11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECABD7FD-BE94-4733-B9BE-E50FE4BFAF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECABD7FD-BE94-4733-B9BE-E50FE4BFAF11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECABD7FD-BE94-4733-B9BE-E50FE4BFAF11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {203E67C8-0D86-49E5-B759-ED73A04C26BA}
+	EndGlobalSection
+EndGlobal
